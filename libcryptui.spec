@@ -96,3 +96,10 @@ documentation for the libcryptui library.
 %{_datadir}/gir-1.0/*.gir
 %doc %{_datadir}/gtk-doc/html/%{name}
 
+
+
+%changelog
+* Mon Jul 16 2012 Matthew Dawkins <mattydaw@mandriva.org> 3.4.1-1
++ Revision: 809932
+- imported package libcryptui
+
