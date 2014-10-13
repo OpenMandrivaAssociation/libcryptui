@@ -1,2 +1,4 @@
+removed_sources:
+  libcryptui-3.4.1.tar.xz: 686ef0a103536e70019c43ad41a57f7fc2fe58d1
 sources:
-  "libcryptui-3.4.1.tar.xz": 686ef0a103536e70019c43ad41a57f7fc2fe58d1
+  libcryptui-3.12.2.tar.xz: af7af0b9138d47e46606aca0e41f10a1c0041bd0

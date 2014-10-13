@@ -8,7 +8,7 @@
 
 Summary:	Interface components for OpenPGP
 Name:		libcryptui
-Version:	3.4.1
+Version:	3.12.2
 Release:	1
 License:	LGPLv2+
 Group:		Graphical desktop/GNOME
