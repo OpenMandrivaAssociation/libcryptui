@@ -9,12 +9,13 @@
 Summary:	Interface components for OpenPGP
 Name:		libcryptui
 Version:	3.12.2
-Release:	2
+Release:	3
 License:	LGPLv2+
 Group:		Graphical desktop/GNOME
 URL:		http://seahorse.sourceforge.net/
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/libcryptui/%{name}-%{version}.tar.xz
-
+Patch1:		libcryptui-3.12.2-gnugpg2.1.patch
+BuildRequires:	autoconf
 BuildRequires:	gnupg
 BuildRequires:	gtk-doc
 BuildRequires:	intltool
@@ -59,13 +60,14 @@ documentation for the libcryptui library.
 
 %prep
 %setup -q
+%apply_patches
 
 %build
-%configure2_5x \
-	--disable-static \
+autoreconf -fiv
+%configure \
 	--disable-dependency-tracking \
 	--disable-update-mime-database \
-	--disable-schemas-compile
+	--disable-schemas-compile 
 
 %make
 

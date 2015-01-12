@@ -1,0 +1,11 @@
+--- libcryptui-3.12.2/configure.ac.orig	2015-01-12 20:32:57.676672477 +0000
++++ libcryptui-3.12.2/configure.ac	2015-01-12 20:33:03.984672012 +0000
+@@ -95,7 +95,7 @@
+ 	DO_CHECK=$enableval, DO_CHECK=yes)
+ 
+ if test	"$DO_CHECK" = "yes"; then
+-	accepted_versions="1.2 1.4 2.0"
++	accepted_versions="1.2 1.4 2.0 2.1"
+ 	AC_PATH_PROGS(GNUPG, [gpg gpg2], no)
+ 	AC_DEFINE_UNQUOTED(GNUPG, "$GNUPG", [Path to gpg executable.])
+ 	ok="no"
