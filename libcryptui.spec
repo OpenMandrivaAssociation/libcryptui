@@ -19,6 +19,7 @@ BuildRequires:	autoconf
 BuildRequires:	gnupg
 BuildRequires:	gtk-doc
 BuildRequires:	intltool
+BuildRequires:	gnupg
 BuildRequires:	gpgme-devel
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(glib-2.0)
