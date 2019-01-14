@@ -15,6 +15,7 @@ Group:		Graphical desktop/GNOME
 URL:		http://seahorse.sourceforge.net/
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/libcryptui/%{name}-%{version}.tar.xz
 Patch1:		libcryptui-3.12.2-gnugpg2.1.patch
+Patch2:		0002-Accept-GnuPG-2.2.x-as-supported-version.patch
 BuildRequires:	autoconf
 BuildRequires:	gnupg
 BuildRequires:	gtk-doc
@@ -61,7 +62,7 @@ documentation for the libcryptui library.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 autoreconf -fiv
@@ -70,10 +71,10 @@ autoreconf -fiv
 	--disable-update-mime-database \
 	--disable-schemas-compile 
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %find_lang %{sname}
 
