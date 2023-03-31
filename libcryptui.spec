@@ -9,7 +9,7 @@
 Summary:	Interface components for OpenPGP
 Name:		libcryptui
 Version:	3.12.2
-Release:	8
+Release:	9
 License:	LGPLv2+
 Group:		Graphical desktop/GNOME
 URL:		http://seahorse.sourceforge.net/
